@@ -1,6 +1,12 @@
 plugins {
     id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.2.0.RELEASE'
+    id "org.dddjava.jig-gradle-plugin" version "2019.11.3"
 }
+
+jigReports.dependsOn(clean, compileJava, processResources)
+bootRun.mustRunAfter(clean)
 
 group 'genba-de-ddd'
 version '1.0-SNAPSHOT'
@@ -8,9 +14,27 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+    jcenter()
+}
+
+def defaultEncoding = 'UTF-8'
+
+[AbstractCompile, Javadoc].each {
+    tasks.withType(it).each { it.options.encoding = defaultEncoding }
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation platform('org.springframework.boot:spring-boot-dependencies:2.2.0.RELEASE')
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group: 'org.junit.vintage')
+    }
+}
+
+test {
+    useJUnitPlatform()
 }
