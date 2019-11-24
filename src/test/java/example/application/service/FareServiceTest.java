@@ -2,6 +2,7 @@ package example.application.service;
 
 import example.domain.model.attempt.Attempt;
 import example.domain.model.bill.Amount;
+import example.domain.model.rules.DistanceTable;
 import example.domain.model.rules.FareTable;
 import example.domain.model.rules.SurchargeTable;
 import example.domain.model.spacification.Destination;
@@ -12,14 +13,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class FareServiceTest {
 
     static private FareService fareService;
+
     static private FareTable fareTable;
     static private SurchargeTable surchargeTable;
+    static private DistanceTable distanceTable;
 
     @BeforeAll
     static void setUp() {
         fareTable = new FareTable();
         surchargeTable = new SurchargeTable();
-        fareService = new FareService(fareTable, surchargeTable);
+        distanceTable = new DistanceTable();
+
+        fareService = new FareService(fareTable, surchargeTable, distanceTable);
     }
 
     @Test
