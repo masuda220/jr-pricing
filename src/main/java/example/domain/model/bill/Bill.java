@@ -1,4 +1,6 @@
-package example.domain.model;
+package example.domain.model.bill;
+
+import example.domain.model.attempt.Attempt;
 
 /**
  * 料金計算書

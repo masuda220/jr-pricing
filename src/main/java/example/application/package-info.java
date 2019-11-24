@@ -1,0 +1,4 @@
+/**
+ * アプリケーション
+ */
+package example.application;
