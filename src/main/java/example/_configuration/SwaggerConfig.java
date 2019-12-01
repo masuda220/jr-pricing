@@ -21,7 +21,7 @@ public class SwaggerConfig {
     @Bean
     public Docket newsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("現場でDDD")
+                .useDefaultResponseMessages(false)
                 .directModelSubstitute(LocalTime.class, String.class)
                 .apiInfo(apiInfo())
                 .select()
@@ -37,7 +37,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("JR 新幹線料金 API specification")
-                .description("version 1.0")
+                .description("会話式にAPIを実行してみてください（＜Try it＞ボタン　→ ＜Execute＞ボタン）")
                 .build();
     }
 

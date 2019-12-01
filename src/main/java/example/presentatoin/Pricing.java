@@ -28,7 +28,7 @@ public class Pricing {
     @ApiOperation("料金計算")
     String pricing(
             @ApiParam(value="大人人数", defaultValue = "1") @RequestParam int adult,
-            @ApiParam(value = "子供人数", defaultValue = "0") @RequestParam int child,
+            @ApiParam(value = "子供人数", defaultValue = "1") @RequestParam int child,
             @ApiParam(value="出発日", defaultValue = "2020-12-15") @RequestParam DepartureDate departureDate,
             @ApiParam(value="目的地", defaultValue = "新大阪") @RequestParam Destination destination,
             @ApiParam(value="座席区分", defaultValue = "指定席") @RequestParam SeatType seatType,

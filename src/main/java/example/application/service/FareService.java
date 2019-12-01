@@ -25,9 +25,9 @@ public class FareService {
     }
 
     public Amount amountFor(Attempt attempt) {
-
-        // 仮実装（目的地別のひかり、大人一名の料金）
+        // 仮実装（ひかり、大人１名）
         Destination to = attempt.to();
-        return new Amount(fareTable.fare(to) + surchargeTable.surcharge(to));
+        Amount fare = new Amount(fareTable.fare(to) + surchargeTable.surcharge(to));
+        return fare;
     }
 }
