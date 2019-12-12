@@ -12,7 +12,7 @@ class AttemptFactory {
                 Destination.新大阪,
                 SeatType.指定席,
                 TrainType.ひかり,
-                TripType.片道
+                TicketType.片道
         );
     }
 }
