@@ -105,8 +105,8 @@
 ### 季節の区分
 
 - 通常期(regular)
-- 閑散期(peak)
-- 繁忙期(off-peak)
+- 閑散期(off-peak)
+- 繁忙期(peak)
 
 の三種類
 
