@@ -1,4 +1,4 @@
-package example.presentatoin;
+package example.presentation;
 
 import example.application.service.FareService;
 import example.domain.model.attempt.Attempt;
