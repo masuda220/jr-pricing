@@ -5,7 +5,7 @@ import example.domain.model.bill.Amount;
 import example.domain.model.rules.DistanceTable;
 import example.domain.model.rules.FareTable;
 import example.domain.model.rules.SurchargeTable;
-import example.domain.model.spacification.Destination;
+import example.domain.model.specification.Destination;
 import org.springframework.stereotype.Service;
 
 /**

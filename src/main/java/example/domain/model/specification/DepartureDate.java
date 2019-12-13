@@ -1,4 +1,4 @@
-package example.domain.model.spacification;
+package example.domain.model.specification;
 
 import java.time.LocalDate;
 

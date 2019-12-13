@@ -1,6 +1,6 @@
 package example.domain.model.attempt;
 
-import example.domain.model.spacification.*;
+import example.domain.model.specification.*;
 
 /**
  * 購入希望

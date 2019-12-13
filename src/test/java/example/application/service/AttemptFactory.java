@@ -1,7 +1,7 @@
 package example.application.service;
 
 import example.domain.model.attempt.Attempt;
-import example.domain.model.spacification.*;
+import example.domain.model.specification.*;
 
 class AttemptFactory {
 

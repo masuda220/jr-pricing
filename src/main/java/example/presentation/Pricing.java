@@ -4,7 +4,7 @@ import example.application.service.FareService;
 import example.domain.model.attempt.Attempt;
 import example.domain.model.bill.Amount;
 import example.domain.model.bill.Bill;
-import example.domain.model.spacification.*;
+import example.domain.model.specification.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
