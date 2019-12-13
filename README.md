@@ -4,6 +4,10 @@
 - jigReports で build/jig 以下に、クラス図等を出力
   - jig の出力には GraphVizが必要です
 
+# 設計のガイドライン
+
+[クラス設計のガイドラン](https://github.com/masuda220/business-logic-patterns/wiki/%E8%A8%AD%E8%A8%88%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
+
 # JR 新幹線　料金ルールを実装してみよう
 
 値オブジェクト（区分オブジェクト、コレックションオブジェクト）を使って、JR の新幹線料金を計算できるようにする。
